@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "0c0f889539bc55c2",
+    "type": "split",
+    "children": [
+      {
+        "id": "2ff1cde2ce562ee7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e175937646214b08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MathFoundation/LinearAlgebra/concepts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7c7dac00f0bf827b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MathFoundation/LinearAlgebra/concepts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6e6a4f8fefe5ac07",
+    "type": "split",
+    "children": [
+      {
+        "id": "c181bb727cebee03",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a1824f8d5f308bc5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "33c5a849237d2d26",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "516078e64b41b93a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e94daf5b3de87423",
+    "type": "split",
+    "children": [
+      {
+        "id": "c35d1bbfdab8183d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69e7dfc6db19d520",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MathFoundation/LinearAlgebra/concepts.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c139a2d40839c52a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "MathFoundation/LinearAlgebra/concepts.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fb313b345ff9dba0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e28e0ced90c6adce",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "MathFoundation/LinearAlgebra/concepts.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "e175937646214b08",
+  "lastOpenFiles": [
+    "terms.md",
+    "MathFoundation/LinearAlgebra/concepts.md",
+    "references.md"
+  ]
+}
