@@ -91,9 +91,9 @@ print(t)
 
 
 
+## norm TODO
 
-
-
+#### Frobenius norm 
 
 
 
@@ -103,13 +103,79 @@ print(t)
 
 ![img](https://cdn.nlark.com/yuque/__latex/dd008043b95edf3d4be664764d54baee.svg)    ![img](https://cdn.nlark.com/yuque/__latex/4a5e26f3251cb2937a01ba8793474521.svg)
 
+```python
+# 一个矩阵A
+A = np.array([[1, 2, 3],[1, 0, 2]])
+print(A)
+
+# 矩阵A的转置
+A_t = A.transpose()
+print(A_t)
+
+[[1 2 3]
+ [1 0 2]]
+
+[[1 1]
+ [2 0]
+ [3 2]]
+```
+
 
 
 ## dot product
 
+内积（Inner Product）和点乘（Dot Product）在数学和线性代数中通常是指同一种运算，但它们在不同的上下文中可能有细微差别。
+
+向量内积：两个向量的对应元素相乘并相加。
+
+$a \cdot b = |a|\cdot|b|\cdot cos\theta$，$\theta$为两个向量的夹角。
+
+从上述表达式中我们可以看出，向量内积的物理含义就是**向量a在b方向上的投影长度**，若b的模是1，则$a \cdot b = |a|\cdot cos\theta$，该结论同样可以适用于矩阵相乘，在后面的矩阵线性变换中我们会用到该结论。
+
+
+
 ![img](https://cdn.nlark.com/yuque/__latex/249d629066fa0c8d1ca34d2214aaba16.svg)
 
-两个矩阵点乘（又称哈达玛积，Hadamard product）。
+在机器学习和数值计算中，两个矩阵点乘有时也被称为**逐元素乘积**（Hadamard Product），它是指两个相同形状的矩阵或向量的对应元素相乘的操作。
+
+
+
+**两个向量的点积是标量**，标量转置的结果是自身。
+
+自此我们可以通过矩阵乘积的方式来表示线性方程组$Ax = b$。其中A是一个矩阵，m行n列，x是一个求解n行的未知向量，b是一个已知向量。
+
+
+
+```python
+# 矩阵A
+A = np.array([[1, 2, 3], [4, 5, 6]])
+
+# 矩阵A1
+A1 = np.array([[1, 2, 3], [2, 3, 4]])
+
+# 矩阵B
+B = np.array([[1, 2, 3], [3, 4, 5], [5, 6, 7]])
+
+C = A.dot(B)  # 点乘 矩阵乘积
+C = np.dot(A, B)
+print(A.dot(B) == np.dot(A, B))  # 两种写法均可
+# print(np.dot(A, B) == np.dot(B, A))  # 矩阵不满足交换律
+
+print("matrix hadamard product \n", np.multiply(A, A1))
+print("matrix hadamard product \n", A * A1)
+# [[1  4  9]  =  [[1 2 3]  * [[1 2 3]
+#  [8 15 24]]     [4 5 6]]    [2 3 4]]
+
+v1 = np.array([1, 2, 3])
+v2 = np.array([4, 5, 6])
+v = v1.dot(v2)  # 向量内积  结果为标量
+v = np.dot(v1, v2)
+v = np.dot(v2, v1)  # 满足交换律
+print("向量内积: ", v)
+# 32=4+10+18
+```
+
+
 
 ## inverse
 
@@ -125,4 +191,5 @@ print(t)
 
 
 
-# norm
+## SVD
+
