@@ -158,8 +158,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a1824f8d5f308bc5",
+  "active": "e175937646214b08",
   "lastOpenFiles": [
+    "MathFoundation/LinearAlgebra/norm.py",
     "MathFoundation/LinearAlgebra/linear_algebra.py",
     "terms.md",
     "MathFoundation/LinearAlgebra/concepts.md",
