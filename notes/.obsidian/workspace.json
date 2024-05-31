@@ -160,6 +160,7 @@
   },
   "active": "e175937646214b08",
   "lastOpenFiles": [
+    "MathFoundation/LinearAlgebra/eigenvalue.py",
     "MathFoundation/LinearAlgebra/norm.py",
     "MathFoundation/LinearAlgebra/linear_algebra.py",
     "terms.md",
