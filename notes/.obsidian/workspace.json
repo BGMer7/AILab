@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MathFoundation/LinearAlgebra/concepts.md",
+                "file": "MathFoundation/ProbabilityStatistics/concepts.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MathFoundation/LinearAlgebra/concepts.md",
+                "file": "MathFoundation/ProbabilityStatistics/Bayesian.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MathFoundation/LinearAlgebra/concepts.md",
+                "file": "MathFoundation/ProbabilityStatistics/Bayesian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MathFoundation/LinearAlgebra/concepts.md",
+                "file": "MathFoundation/ProbabilityStatistics/Bayesian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MathFoundation/LinearAlgebra/concepts.md"
+                "file": "MathFoundation/ProbabilityStatistics/Bayesian.md"
               }
             }
           }
@@ -158,13 +159,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e175937646214b08",
+  "active": "7c7dac00f0bf827b",
   "lastOpenFiles": [
+    "MathFoundation/ProbabilityStatistics/concepts.md",
+    "MathFoundation/ProbabilityStatistics/conditional probability.md",
+    "MathFoundation/ProbabilityStatistics/distributions.md",
+    "MathFoundation/ProbabilityStatistics/independence.md",
+    "MathFoundation/LinearAlgebra/concepts.md",
+    "MathFoundation/ProbabilityStatistics/Bayesian.md",
+    "MathFoundation/ProbabilityStatistics/Distribution",
     "MathFoundation/LinearAlgebra/eigenvalue.py",
     "MathFoundation/LinearAlgebra/norm.py",
     "MathFoundation/LinearAlgebra/linear_algebra.py",
     "terms.md",
-    "MathFoundation/LinearAlgebra/concepts.md",
     "references.md"
   ]
 }
