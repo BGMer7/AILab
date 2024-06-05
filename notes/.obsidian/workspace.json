@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MathFoundation/ProbabilityStatistics/Bayesian.md",
+                "file": "MathFoundation/ProbabilityStatistics/independence.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MathFoundation/ProbabilityStatistics/Bayesian.md",
+                "file": "MathFoundation/ProbabilityStatistics/independence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MathFoundation/ProbabilityStatistics/Bayesian.md",
+                "file": "MathFoundation/ProbabilityStatistics/independence.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MathFoundation/ProbabilityStatistics/Bayesian.md"
+                "file": "MathFoundation/ProbabilityStatistics/independence.md"
               }
             }
           }
@@ -161,12 +161,12 @@
   },
   "active": "7c7dac00f0bf827b",
   "lastOpenFiles": [
+    "MathFoundation/ProbabilityStatistics/Bayesian.md",
     "MathFoundation/ProbabilityStatistics/concepts.md",
     "MathFoundation/ProbabilityStatistics/conditional probability.md",
     "MathFoundation/ProbabilityStatistics/distributions.md",
     "MathFoundation/ProbabilityStatistics/independence.md",
     "MathFoundation/LinearAlgebra/concepts.md",
-    "MathFoundation/ProbabilityStatistics/Bayesian.md",
     "MathFoundation/ProbabilityStatistics/Distribution",
     "MathFoundation/LinearAlgebra/eigenvalue.py",
     "MathFoundation/LinearAlgebra/norm.py",
