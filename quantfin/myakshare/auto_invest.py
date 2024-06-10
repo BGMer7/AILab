@@ -13,21 +13,6 @@ def get_stock_data_in_time(stock_code, start_date, end_date):
     return stock_data
 
 
-def get_fund_data_in_timezone(fund_code, start_date, end_date):
-    """
-    获取指定日期范围内的基金净值数据
-    """
-    fund_nav_df = ak.fund_open_fund_info_em(
-        symbol="000834", indicator="单位净值走势", period="成立来"
-    )
-    print(fund_nav_df)
-    fund_nav_df["净值日期"] = pd.to_datetime(fund_nav_df["净值日期"])
-    fund_nav_df = fund_nav_df[
-        (fund_nav_df["净值日期"] >= start_date) & (fund_nav_df["净值日期"] <= end_date)
-    ]
-    return fund_nav_df
-
-
 # 定投收益计算
 def calculate_stock_auto_investment_income(
     stock_data, investment_amount, investment_weekday, start_date, end_date
@@ -59,7 +44,22 @@ def calculate_stock_auto_investment_income(
     profit = market_value - investment_value
     ratio = profit / investment_value
 
-    return (investment_value, market_value, profit, ratio)
+    return investment_value, market_value, profit, ratio
+
+
+def get_fund_data_in_timezone(fund_code, start_date, end_date):
+    """
+    获取指定日期范围内的基金净值数据
+    """
+    fund_nav_df = ak.fund_open_fund_info_em(
+        symbol=fund_code, indicator="单位净值走势", period="成立来"
+    )
+    print(fund_nav_df)
+    fund_nav_df["净值日期"] = pd.to_datetime(fund_nav_df["净值日期"])
+    fund_nav_df = fund_nav_df[
+        (fund_nav_df["净值日期"] >= start_date) & (fund_nav_df["净值日期"] <= end_date)
+    ]
+    return fund_nav_df
 
 
 def calculate_qdii_investment_income(fund_data, investment_day, investment_amount):
@@ -108,7 +108,7 @@ def stock_main():
     print(f"收益率: {profit / total_investment * 100:.2f}%")
 
 
-def qdii_main():
+def qdii_main(fund_code, start_date, end_date, investment_day, investment_amount):
     # fund_code = input("请输入QDII基金代码: ")
     # start_date = input("请输入定投开始日期 (YYYY-MM-DD): ")
     # end_date = input("请输入定投结束日期 (YYYY-MM-DD): ")
@@ -132,6 +132,8 @@ def qdii_main():
     print(f"投资结束时基金总市值: {total_value:.2f} 元")
     print(f"总收益: {profit:.2f} 元")
     print(f"收益率: {ratio * 100:.2f}% 元")
+
+    return total_invested, total_value, profit, ratio
 
 
 def main():

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Calculator</title>
+</head>
+<body>
+    <h1>Investment Calculator</h1>
+    <form id="investment-form">
+        <label for="stock_code">Stock Code:</label>
+        <input type="text" id="stock_code" name="stock_code"><br><br>
+        <label for="start_date">Start Date (YYYYMMDD):</label>
+        <input type="text" id="start_date" name="start_date"><br><br>
+        <label for="end_date">End Date (YYYYMMDD):</label>
+        <input type="text" id="end_date" name="end_date"><br><br>
+        <label for="investment_amount">Investment Amount:</label>
+        <input type="text" id="investment_amount" name="investment_amount"><br><br>
+        <label for="investment_weekday">Investment Weekday (0 for Monday, 1 for Tuesday, etc.):</label>
+        <input type="text" id="investment_weekday" name="investment_weekday"><br><br>
+        <button type="submit">Calculate</button>
+    </form>
+    <h2>Result:</h2>
+    <pre id="result"></pre>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
