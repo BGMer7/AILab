@@ -369,6 +369,32 @@ print("向量内积: ", v)
 
 
 
+## take derivative
+
+[矩阵微分常用公式整理_矩阵微分规则-CSDN博客](https://blog.csdn.net/xfijun/article/details/104168293)
+
+线性函数$f(x)=b^Tx$的导数为 
+$$
+\frac{\mathrm{d}f(x)}{\mathrm{d}x} = b
+$$
+或者
+$$
+\frac{\mathrm{d}f(x)}{\mathrm{d}x^T} = b^T
+$$
+
+
+二次函数$f(x)$可以化为二次型矩阵的乘法，即：
+$$
+f(x)=x^TAx，\frac{\mathrm{d}f(x)}{\mathrm{d}x} = (A+A^T)x
+$$
+若$A$为对称矩阵，公式可化简为$\frac{\mathrm{d}f(x)}{\mathrm{d}x} = 2Ax$。
+
+
+
+
+
+
+
 ## EVD & SVD
 
 特征值和奇异值分解
