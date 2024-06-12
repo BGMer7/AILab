@@ -1,6 +1,12 @@
 import akshare as ak
 import pandas as pd
+import sys, os
 from datetime import datetime, timedelta
+
+
+# 获取交易日历
+def get_trade_calendar():
+    return ak.tool_trade_date_hist_sina()
 
 
 # 获取股票的历史数据
@@ -62,19 +68,66 @@ def get_fund_data_in_timezone(fund_code, start_date, end_date):
     return fund_nav_df
 
 
-def calculate_qdii_investment_income(fund_data, investment_day, investment_amount):
+def calculate_qdii_investment_income(
+    fund_code, start_date, end_date, investment_day, amount
+):
     """
     计算定投收益
     """
     investment_day = investment_day.lower()
+    fund_data = get_fund_data_in_timezone(fund_code, start_date, end_date)
+    a_trade_calendar = get_trade_calendar()
+    print("A股交易日", a_trade_calendar)
+    # TODO 暂时假定美股的交易日与A股相同
+    us_trade_calendar = get_trade_calendar()
     total_units = 0
     total_investment = 0
 
-    for date, nav in fund_data[["净值日期", "单位净值"]].values:
-        if date.strftime("%A").lower() == investment_day:
-            units = investment_amount / nav
-            total_units += units
-            total_investment += investment_amount
+    """
+    TODO 交易日的判断实际上不能简单根据入参的日期判断是否相等，入参的日期只是扣款日
+    而要根据扣款日T+2计算份额
+    """
+    for date in pd.date_range(start=start_date, end=end_date):
+        # 如果当前日期是用户指定的定投日
+        if date.strftime("%A").lower() == investment_day.lower():
+            # 如果当前日期是A股交易日
+            if datetime.strptime(date.strftime("%Y-%m-%d"), "%Y-%m-%d").date() in a_trade_calendar.values:
+                print(date.strftime("%Y-%m-%d"), "是A股交易日")
+                # 找到下一个美股交易日
+                next_day = date + timedelta(days=1)
+                while datetime.strptime(next_day.strftime("%Y-%m-%d"), "%Y-%m-%d").date() not in us_trade_calendar.values:
+                    next_day += timedelta(days=1)
+                    
+                if date in fund_data["净值日期"].values:
+                    next_day_nav = fund_data[fund_data["净值日期"] == next_day][
+                        "单位净值"
+                    ].values[0]
+                    print("amount", amount)
+                    units = amount / next_day_nav
+                    total_units += units
+                    total_investment += amount
+            else:
+                print(date.strftime("%Y-%m-%d"), "不是A股交易日")
+                # 如果当前日期不是A股交易日，寻找下一个A股交易日
+                next_a_trade_date = date + timedelta(days=1)
+                while datetime.strptime(next_day.strftime("%Y-%m-%d"), "%Y-%m-%d").date() not in us_trade_calendar.values:
+                    next_day += timedelta(days=1)
+
+                # 找到对应的美股交易日
+                next_us_trade_date = next_a_trade_date + timedelta(days=1)
+                while (
+                    datetime.strptime(next_us_trade_date.strftime("%Y-%m-%d"), "%Y-%m-%d").date()
+                    not in us_trade_calendar.values
+                ):
+                    next_us_trade_date += timedelta(days=1)
+
+                if date in fund_data["净值日期"].values:
+                    next_day_nav = fund_data[
+                        fund_data["净值日期"] == next_us_trade_date
+                    ]["单位净值"].values[0]
+                    units = amount / next_day_nav
+                    total_units += units
+                    total_investment += amount
 
     market_value = total_units * fund_data.iloc[-1]["单位净值"]
     profit = market_value - total_investment
@@ -109,11 +162,6 @@ def stock_main():
 
 
 def qdii_main(fund_code, start_date, end_date, investment_day, investment_amount):
-    # fund_code = input("请输入QDII基金代码: ")
-    # start_date = input("请输入定投开始日期 (YYYY-MM-DD): ")
-    # end_date = input("请输入定投结束日期 (YYYY-MM-DD): ")
-    # investment_day = input("请输入每周定投的日期 (如: 'wednesday'): ")
-    # investment_amount = float(input("请输入每次定投的金额: "))
     fund_code = "000834"
     start_date = "20240301"
     end_date = "20240607"
@@ -123,9 +171,8 @@ def qdii_main(fund_code, start_date, end_date, investment_day, investment_amount
     start_date = pd.to_datetime(start_date)
     end_date = pd.to_datetime(end_date)
 
-    fund_data = get_fund_data_in_timezone(fund_code, start_date, end_date)
     total_invested, total_value, profit, ratio = calculate_qdii_investment_income(
-        fund_data, investment_day, investment_amount
+        fund_code, start_date, end_date, investment_day, investment_amount
     )
 
     print(f"总投资金额: {total_invested:.2f} 元")
@@ -134,10 +181,6 @@ def qdii_main(fund_code, start_date, end_date, investment_day, investment_amount
     print(f"收益率: {ratio * 100:.2f}% 元")
 
     return total_invested, total_value, profit, ratio
-
-
-def main():
-    qdii_main()
 
 
 if __name__ == "__main__":
