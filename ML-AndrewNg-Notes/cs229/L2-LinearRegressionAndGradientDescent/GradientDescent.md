@@ -1,6 +1,6 @@
 线性回归的本质就是对最小均方误差MSE求导
 
-
+# Gradient Descent
 
 ## Linear Model
 
@@ -71,7 +71,24 @@ $$
 $$
 \frac{\partial J(\theta)}{\partial \theta_i} = \frac{1}{m} \sum_{i=1}^{m} \left( h_\theta(x^{(i)}) - y^{(i)} \right) x^{(i)}
 $$
- 
+
+> 线性回归的一个优势是不存在局部最优，因为得益于 loss function 是一个二次函数，一个凸函数，凸函数的局部最优就是全局最优。
+
+
+
+# Batch Gradient Descent
+
+
+
+
+
+# Stochastic Gradient Descent
+
+
+
+
+
+# Mini Batch Gradient Descent
 
 
 
