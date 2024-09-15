@@ -11,8 +11,12 @@
             "id": "a6c8513174ed5b4e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Deep-Learning/Learning-Rate/Learning Rate.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Deep-Learning/Learning-Rate/Learning Rate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Deep-Learning/Learning-Rate/Learning Rate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Deep-Learning/Learning-Rate/Learning Rate.md"
+              }
             }
           }
         ]
@@ -140,16 +148,34 @@
   },
   "active": "a6c8513174ed5b4e",
   "lastOpenFiles": [
+    "Computer-Vision/Convolution/convolution.md",
+    "Deep-Learning/Learning-Rate/Learning Rate.md",
+    "Deep-Learning/Learning-Rate",
+    "Deep-Learning",
+    "Math-Foundation/Probability-Statistics/joint probability.md",
+    "Math-Foundation/Probability-Statistics/introduction.md",
+    "Math-Foundation/Probability-Statistics/independence.md",
+    "Math-Foundation/Probability-Statistics/distributions.md",
+    "Math-Foundation/Probability-Statistics/conditional probability.md",
+    "Math-Foundation/Probability-Statistics/concepts.md",
+    "Math-Foundation/Probability-Statistics/Bayesian.md",
+    "Math-Foundation/Linear-Algebra/norm.py",
+    "Math-Foundation/Linear-Algebra/linear_algebra.py",
+    "Math-Foundation/Linear-Algebra/eigenvalue.py",
+    "Math-Foundation/Linear-Algebra/concepts.md",
+    "Math-Foundation/Probability-Statistics",
+    "Math-Foundation/Linear-Algebra",
+    "Math-Foundation",
+    "Machine-Learning/BackPropagation/Materials.md",
+    "Machine-Learning/BackPropagation/BP.md",
+    "Machine-Learning/BackPropagation",
+    "Machine-Learning",
     "MathFoundation/ProbabilityStatistics/concepts.md",
     "MathFoundation/ProbabilityStatistics/independence.md",
     "MathFoundation/ProbabilityStatistics/Bayesian.md",
     "MathFoundation/ProbabilityStatistics/conditional probability.md",
     "MathFoundation/ProbabilityStatistics/distributions.md",
     "MathFoundation/LinearAlgebra/concepts.md",
-    "MathFoundation/ProbabilityStatistics/Distribution",
-    "MathFoundation/LinearAlgebra/eigenvalue.py",
-    "MathFoundation/LinearAlgebra/norm.py",
-    "MathFoundation/LinearAlgebra/linear_algebra.py",
     "terms.md",
     "references.md"
   ]
