@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Deep-Learning/Learning-Rate/Learning Rate.md",
+                "file": "Deep-Learning/Weight Decay.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6f4f17152657ea86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Deep-Learning/Weight Decay.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Deep-Learning/Learning-Rate/Learning Rate.md",
+                "file": "Deep-Learning/Weight Decay.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Deep-Learning/Learning-Rate/Learning Rate.md",
+                "file": "Deep-Learning/Weight Decay.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Deep-Learning/Learning-Rate/Learning Rate.md"
+                "file": "Deep-Learning/Weight Decay.md"
               }
             }
           }
@@ -146,10 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a6c8513174ed5b4e",
+  "active": "a1824f8d5f308bc5",
   "lastOpenFiles": [
+    "Deep-Learning/Learning Rate.md",
+    "Deep-Learning/Weight Decay.md",
+    "Deep-Learning/Untitled",
     "Computer-Vision/Convolution/convolution.md",
-    "Deep-Learning/Learning-Rate/Learning Rate.md",
     "Deep-Learning/Learning-Rate",
     "Deep-Learning",
     "Math-Foundation/Probability-Statistics/joint probability.md",
@@ -169,7 +184,6 @@
     "Machine-Learning/BackPropagation/Materials.md",
     "Machine-Learning/BackPropagation/BP.md",
     "Machine-Learning/BackPropagation",
-    "Machine-Learning",
     "MathFoundation/ProbabilityStatistics/concepts.md",
     "MathFoundation/ProbabilityStatistics/independence.md",
     "MathFoundation/ProbabilityStatistics/Bayesian.md",
