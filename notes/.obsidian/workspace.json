@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Deep-Learning/Weight Decay.md",
+                "file": "Deep-Learning/Dropout.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Deep-Learning/Weight Decay.md",
+                "file": "Deep-Learning/Dropout.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Deep-Learning/Weight Decay.md",
+                "file": "Deep-Learning/Dropout.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Deep-Learning/Weight Decay.md"
+                "file": "Deep-Learning/Dropout.md"
               }
             }
           }
@@ -159,10 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a1824f8d5f308bc5",
+  "active": "6f4f17152657ea86",
   "lastOpenFiles": [
-    "Deep-Learning/Learning Rate.md",
     "Deep-Learning/Weight Decay.md",
+    "Deep-Learning/Dropout.md",
+    "Deep-Learning/Learning Rate.md",
     "Deep-Learning/Untitled",
     "Computer-Vision/Convolution/convolution.md",
     "Deep-Learning/Learning-Rate",
