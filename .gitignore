@@ -9,3 +9,5 @@ Hands-On/Dive-In-Deep-Learning/data/FashionMNIST/raw/train-labels-idx1-ubyte
 Hands-On/Dive-In-Deep-Learning/data/FashionMNIST/raw/train-labels-idx1-ubyte.gz
 *checkpoint.py
 .idea/*
+dataset/CIFAR-10/test/*
+dataset/CIFAR-10/train/*
