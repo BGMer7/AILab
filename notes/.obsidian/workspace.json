@@ -11,8 +11,14 @@
             "id": "50f1835dfcf9c04a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Deep-Learning/Fine Tune.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Fine Tune"
             }
           }
         ]
@@ -35,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -50,7 +58,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -58,7 +68,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -81,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Deep-Learning/Fine Tune.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,7 +101,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Fine Tune"
             }
           },
           {
@@ -97,9 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Deep-Learning/Fine Tune.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Fine Tune"
             }
           },
           {
@@ -110,7 +128,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -118,7 +138,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Deep-Learning/Fine Tune.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Fine Tune"
             }
           }
         ]
@@ -140,6 +164,13 @@
   },
   "active": "50f1835dfcf9c04a",
   "lastOpenFiles": [
+    "Deep-Learning/Overlap.md",
+    "Deep-Learning/Fine Tune.md",
+    "Deep-Learning/Feature Map.md",
+    "Deep-Learning/Hidden Layer.md",
+    "Deep-Learning/Hidden Layer.jpeg",
+    "Deep-Learning/屏幕截图_10-11-2024_222827_zhuanlan.zhihu.com.jpeg.crdownload",
+    "Deep-Learning/屏幕截图_10-11-2024_222648_zhuanlan.zhihu.com.jpeg.crdownload",
     "Deep-Learning/Weight Decay.md",
     "Deep-Learning/Dropout.md",
     "Deep-Learning/Learning Rate.md",
@@ -160,10 +191,8 @@
     "Math-Foundation/Linear-Algebra/concepts.md",
     "Math-Foundation/Probability-Statistics",
     "Math-Foundation/Linear-Algebra",
-    "Math-Foundation",
     "Machine-Learning/BackPropagation/Materials.md",
     "Machine-Learning/BackPropagation/BP.md",
-    "Machine-Learning/BackPropagation",
     "MathFoundation/ProbabilityStatistics/concepts.md",
     "MathFoundation/ProbabilityStatistics/independence.md",
     "MathFoundation/ProbabilityStatistics/Bayesian.md",
