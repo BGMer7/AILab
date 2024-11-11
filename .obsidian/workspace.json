@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/Computer-Vision/Convolution/convolution.md",
+                "file": "notes/Deep-Learning/Layer Norm.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/Computer-Vision/Convolution/convolution.md",
+                "file": "notes/Deep-Learning/Layer Norm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/Computer-Vision/Convolution/convolution.md",
+                "file": "notes/Deep-Learning/Layer Norm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/Computer-Vision/Convolution/convolution.md"
+                "file": "notes/Deep-Learning/Layer Norm.md"
               }
             }
           }
@@ -133,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,6 +147,15 @@
   },
   "active": "7c2c681f6b427883",
   "lastOpenFiles": [
+    "experiments/Layer-Normalization.ipynb",
+    "notes/Deep-Learning/Hidden Layer.md",
+    "notes/Deep-Learning/Layer Norm.md",
+    "notes/Deep-Learning/Normalization.md",
+    "notes/Computer-Vision/Convolution/convolution.md",
+    "notes/Deep-Learning/Overlap.md",
+    "notes/Deep-Learning/Fine Tune.md",
+    "notes/Model/Pretrain.md",
+    "notes/Deep-Learning/Batch Norm.md",
     "notes/Computer-Vision/Convolution/convolution.ipynb",
     "Hands-On/Dive-In-Deep-Learning/Chapter2-Preliminaries/2.5-AutomaticDifferentiation.ipynb.tmp",
     "Hands-On/Dive-In-Deep-Learning/Chapter3-Linear-Neural-Networks-for-Regression/3.5-ConciseImplementation.ipynb",
@@ -163,7 +171,6 @@
     "ML-AndrewNg-Notes/cs229/L8-Bias-Variance-Regularization",
     "ML-AndrewNg-Notes/cs229/L6&L7-SVM-Kernels/SVM.md",
     "ML-AndrewNg-Notes/cs229/L6&L7-SVM-Kernels/SMV.md",
-    "ML-AndrewNg-Notes/cs229/L6&L7-SVM-Kernels/新建 文本文档.txt",
     "ML-AndrewNg-Notes/cs229/L6&L7-SVM-Kernels/Kernels.md",
     "ML-AndrewNg-Notes/cs229/L5-GDA-NaiveBayes-EM/NaiveBayes.md",
     "ML-AndrewNg-Notes/cs229/L5-GDA-NaiveBayes-EM/EM.md",
