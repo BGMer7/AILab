@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Deep-Learning/Fine Tune.md",
+                "file": "Deep-Learning/Few-Shot.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fine Tune"
+              "title": "Few-Shot"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Deep-Learning/Fine Tune.md",
+                "file": "Deep-Learning/Few-Shot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Fine Tune"
+              "title": "Backlinks for Few-Shot"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Deep-Learning/Fine Tune.md",
+                "file": "Deep-Learning/Few-Shot.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Fine Tune"
+              "title": "Outgoing links from Few-Shot"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Deep-Learning/Fine Tune.md"
+                "file": "Deep-Learning/Few-Shot.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Fine Tune"
+              "title": "Outline of Few-Shot"
             }
           }
         ]
@@ -164,8 +164,14 @@
   },
   "active": "50f1835dfcf9c04a",
   "lastOpenFiles": [
-    "Deep-Learning/Overlap.md",
+    "Deep-Learning/Zero-Shot.md",
+    "Deep-Learning/One-Shot.md",
+    "Deep-Learning/Normalization.md",
+    "Deep-Learning/Few-Shot.md",
     "Deep-Learning/Fine Tune.md",
+    "Deep-Learning/Layer Norm.md",
+    "Deep-Learning/Batch Norm.md",
+    "Deep-Learning/Overlap.md",
     "Deep-Learning/Feature Map.md",
     "Deep-Learning/Hidden Layer.md",
     "Deep-Learning/Hidden Layer.jpeg",
@@ -194,12 +200,6 @@
     "Machine-Learning/BackPropagation/Materials.md",
     "Machine-Learning/BackPropagation/BP.md",
     "MathFoundation/ProbabilityStatistics/concepts.md",
-    "MathFoundation/ProbabilityStatistics/independence.md",
-    "MathFoundation/ProbabilityStatistics/Bayesian.md",
-    "MathFoundation/ProbabilityStatistics/conditional probability.md",
-    "MathFoundation/ProbabilityStatistics/distributions.md",
-    "MathFoundation/LinearAlgebra/concepts.md",
-    "terms.md",
-    "references.md"
+    "MathFoundation/ProbabilityStatistics/independence.md"
   ]
 }
