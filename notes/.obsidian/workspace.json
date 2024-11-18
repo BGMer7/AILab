@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Model/Knowledge Distillation.md",
+                "file": "Deep-Learning/Object-Detection/Region of Interest(RoI).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Knowledge Distillation"
+              "title": "Region of Interest(RoI)"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Model/Knowledge Distillation.md",
+                "file": "Deep-Learning/Object-Detection/Region of Interest(RoI).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Knowledge Distillation"
+              "title": "Backlinks for Region of Interest(RoI)"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Model/Knowledge Distillation.md",
+                "file": "Deep-Learning/Object-Detection/Region of Interest(RoI).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Knowledge Distillation"
+              "title": "Outgoing links from Region of Interest(RoI)"
             }
           },
           {
@@ -139,18 +139,18 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Model/Knowledge Distillation.md"
+                "file": "Deep-Learning/Object-Detection/Region of Interest(RoI).md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Knowledge Distillation"
+              "title": "Outline of Region of Interest(RoI)"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,10 +162,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b675e326e8acb3cc",
+  "active": "e28e0ced90c6adce",
   "lastOpenFiles": [
-    "Deep-Learning/Weight Decay.md",
+    "Deep-Learning/Object-Detection/Anchor.md",
+    "Deep-Learning/Object-Detection/Region of Interest(RoI).md",
     "Model/Knowledge Distillation.md",
+    "Deep-Learning/Weight Decay.md",
     "Untitled.canvas",
     "Model/Transfer Learning.md",
     "Model/Pretrain.md",
@@ -190,8 +192,6 @@
     "Deep-Learning/Few-Shot.md",
     "Deep-Learning/Zero-Shot.md",
     "Deep-Learning/One-Shot.md",
-    "Deep-Learning/Normalization.md",
-    "Deep-Learning/Fine Tune.md",
     "Deep-Learning/Hidden Layer.jpeg",
     "Deep-Learning/屏幕截图_10-11-2024_222827_zhuanlan.zhihu.com.jpeg.crdownload",
     "Deep-Learning/屏幕截图_10-11-2024_222648_zhuanlan.zhihu.com.jpeg.crdownload",
