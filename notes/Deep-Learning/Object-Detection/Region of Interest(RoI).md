@@ -1,4 +1,7 @@
 [[Anchor]]
+[[Non-Maximum Suppression(NMS)]]
+[[mean Average Precision(mAP)]]
+[[Intersection over Union(IoU)]]
 
 目标检测中的 **Region of Interest (RoI, 感兴趣区域)** 是指图像中的某些特定区域，模型认为这些区域可能包含目标，并会重点分析它们。RoI 是目标检测中的核心概念，用于优化算法性能，提高计算效率和检测精度。
 

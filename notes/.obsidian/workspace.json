@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b7b59d80d464e77a",
+        "id": "8c68d4696d8a8ec6",
         "type": "tabs",
         "children": [
           {
-            "id": "b675e326e8acb3cc",
+            "id": "7dba5258c214ba18",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Deep-Learning/Object-Detection/Region of Interest(RoI).md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Region of Interest(RoI)"
+              "title": "New tab"
             }
           }
         ]
@@ -138,11 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Deep-Learning/Object-Detection/Region of Interest(RoI).md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of Region of Interest(RoI)"
+              "title": "Outline"
             }
           }
         ],
@@ -162,10 +156,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e28e0ced90c6adce",
+  "active": "7dba5258c214ba18",
   "lastOpenFiles": [
-    "Deep-Learning/Object-Detection/Anchor.md",
+    "Math-Foundation/Linear-Algebra/Singular Value Decomposition(SVD).md",
+    "Math-Foundation/Linear-Algebra/Eigen Value Decomposition(EVD).md",
     "Deep-Learning/Object-Detection/Region of Interest(RoI).md",
+    "Deep-Learning/Object-Detection/Non-Maximum Suppression(NMS).md",
+    "Deep-Learning/Object-Detection/mean Average Precision(mAP).md",
+    "Deep-Learning/Object-Detection/Intersection over Union(IoU).md",
+    "Deep-Learning/Zero-Shot.md",
+    "Deep-Learning/Object-Detection/Anchor.md",
     "Model/Knowledge Distillation.md",
     "Deep-Learning/Weight Decay.md",
     "Untitled.canvas",
@@ -185,13 +185,7 @@
     "Deep-Learning/Non-Autoregressive Transformer(NAT).md",
     "Deep-Learning/Warm Restarts.md",
     "Deep-Learning/Cosine Annealing.md",
-    "Deep-Learning/Batch Norm.md",
-    "PyTorch/Optimizer & Scheduler.md",
-    "PyTorch/Scheduler.md",
     "PyTorch",
-    "Deep-Learning/Few-Shot.md",
-    "Deep-Learning/Zero-Shot.md",
-    "Deep-Learning/One-Shot.md",
     "Deep-Learning/Hidden Layer.jpeg",
     "Deep-Learning/屏幕截图_10-11-2024_222827_zhuanlan.zhihu.com.jpeg.crdownload",
     "Deep-Learning/屏幕截图_10-11-2024_222648_zhuanlan.zhihu.com.jpeg.crdownload",
