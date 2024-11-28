@@ -4,6 +4,8 @@
 [[State]]
 [[Policy]]
 [[Supervised Learning]]
+[[Markov Decision Process(MDP)]]
+[[Markov Reward Process(MRP)]]
 
 
 
