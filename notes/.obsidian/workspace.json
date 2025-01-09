@@ -4,34 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "8c68d4696d8a8ec6",
+        "id": "b7b59d80d464e77a",
         "type": "tabs",
         "children": [
           {
-            "id": "7dba5258c214ba18",
+            "id": "b675e326e8acb3cc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Deep-Learning/Object-Detection/Face/Triplet Loss.md",
+                "file": "Deep-Learning/Object-Detection/Region of Interest(RoI).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Triplet Loss"
+              "title": "Region of Interest(RoI)"
             }
           },
           {
-            "id": "6e694695f8535239",
+            "id": "d89c44764b26c76d",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {},
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "关系图谱"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +54,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -70,7 +71,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜索"
             }
           },
           {
@@ -80,7 +81,7 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "书签"
             }
           }
         ]
@@ -103,7 +104,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Deep-Learning/Object-Detection/Region of Interest(RoI).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Region of Interest(RoI)"
+              "title": "反向链接"
             }
           },
           {
@@ -122,12 +122,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Deep-Learning/Object-Detection/Region of Interest(RoI).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Region of Interest(RoI)"
+              "title": "出链"
             }
           },
           {
@@ -140,7 +139,7 @@
                 "useHierarchy": true
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "标签"
             }
           },
           {
@@ -148,11 +147,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Deep-Learning/Object-Detection/Face/Triplet Loss.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of Triplet Loss"
+              "title": "大纲"
             }
           }
         ],
@@ -164,54 +161,53 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
     }
   },
-  "active": "7dba5258c214ba18",
+  "active": "d89c44764b26c76d",
   "lastOpenFiles": [
-    "Deep-Learning/Object-Detection/Anchor.md",
+    "Large Language Model/Retrieval Augmented Generation(RAG).md",
+    "Large Language Model",
     "Deep-Learning/Object-Detection/Face/Triplet Loss.md",
-    "Deep-Learning/Object-Detection/Region of Interest(RoI).md",
-    "Deep-Learning/Object-Detection/mean Average Precision(mAP).md",
-    "Deep-Learning/Object-Detection/Intersection over Union(IoU).md",
-    "Deep-Learning/Object-Detection/Non-Maximum Suppression(NMS).md",
-    "Deep-Learning/Object-Detection/Face/ArcFace.md",
     "Deep-Learning/Object-Detection/Face/Haar Cascade.md",
     "Deep-Learning/Object-Detection/Face/Face Recognition.md",
     "Deep-Learning/Object-Detection/Face/Cascade.md",
-    "Large Language Model/Retrieval Augmented Generation(RAG).md",
+    "Deep-Learning/Object-Detection/Face/ArcFace.md",
     "Deep-Learning/Object-Detection/Face",
-    "Math-Foundation/Probability-Statistics/Markov Reward.md",
-    "Math-Foundation/Probability-Statistics/Pure Sampling.md",
-    "Math-Foundation/Probability-Statistics/Bellman Equation.md",
-    "Math-Foundation/Probability-Statistics/Markov Property.md",
-    "Pasted image 20241129111755.png",
-    "Reinforcement-Learning/Markov Reward Process(MRP).md",
-    "Reinforcement-Learning/Reinforcement Learning.md",
-    "Reinforcement-Learning/Markov Decision Process(MDP).md",
-    "Math-Foundation/Probability-Statistics/Markov Chain.md",
-    "Math-Foundation/Probability-Statistics/Transition Matrix.md",
-    "Math-Foundation/Probability-Statistics/Stochastic Process.md",
-    "Reinforcement-Learning/Policy based RL.md",
-    "Math-Foundation/Probability-Statistics/conditional probability.md",
+    "Deep-Learning/Computer-Vision/Cascade Classifier.md",
     "Reinforcement-Learning/Value based RL.md",
     "Reinforcement-Learning/State.md",
     "Reinforcement-Learning/Reward.md",
+    "Reinforcement-Learning/Reinforcement Learning.md",
+    "Reinforcement-Learning/Policy.md",
+    "Reinforcement-Learning/Policy based RL.md",
+    "Reinforcement-Learning/Markov Reward Process(MRP).md",
+    "Reinforcement-Learning/Markov Decision Process(MDP).md",
+    "Reinforcement-Learning/Agent.md",
+    "Reinforcement-Learning/Actor-Critic.md",
+    "Reinforcement-Learning/Action.md",
     "Reinforcement-Learning",
+    "Math-Foundation/Probability-Statistics/Transition Matrix.md",
+    "Math-Foundation/Probability-Statistics/Stochastic Process.md",
+    "Math-Foundation/Probability-Statistics/Markov Reward.md",
+    "Math-Foundation/Probability-Statistics/Markov Property.md",
+    "Math-Foundation/Probability-Statistics/Markov Chain.md",
+    "Math-Foundation/Probability-Statistics/Bellman Equation.md",
+    "Math-Foundation/Linear-Algebra/Singular Value Decomposition(SVD).md",
+    "Math-Foundation/Linear-Algebra/Eigen Value Decomposition(EVD).md",
+    "Deep-Learning/RAG",
+    "Deep-Learning/未命名",
     "Untitled.canvas",
     "PyTorch",
     "Deep-Learning/Hidden Layer.jpeg",
     "Deep-Learning/屏幕截图_10-11-2024_222827_zhuanlan.zhihu.com.jpeg.crdownload",
     "Deep-Learning/屏幕截图_10-11-2024_222648_zhuanlan.zhihu.com.jpeg.crdownload",
     "Deep-Learning/Untitled",
-    "Deep-Learning/Learning-Rate",
-    "Deep-Learning",
-    "Math-Foundation/Linear-Algebra/norm.py",
-    "Math-Foundation/Linear-Algebra/linear_algebra.py"
+    "Deep-Learning/Learning-Rate"
   ]
 }
