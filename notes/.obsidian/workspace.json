@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Math-Foundation/Probability-Statistics/Markov Reward.md",
+                "file": "Deep-Learning/Object-Detection/Face/Triplet Loss.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Markov Reward"
+              "title": "Triplet Loss"
             }
           },
           {
@@ -149,10 +149,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Math-Foundation/Probability-Statistics/Markov Reward.md"
+                "file": "Deep-Learning/Object-Detection/Face/Triplet Loss.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Markov Reward"
+              "title": "Outline of Triplet Loss"
             }
           }
         ],
@@ -174,9 +174,21 @@
   },
   "active": "7dba5258c214ba18",
   "lastOpenFiles": [
+    "Deep-Learning/Object-Detection/Anchor.md",
+    "Deep-Learning/Object-Detection/Face/Triplet Loss.md",
+    "Deep-Learning/Object-Detection/Region of Interest(RoI).md",
+    "Deep-Learning/Object-Detection/mean Average Precision(mAP).md",
+    "Deep-Learning/Object-Detection/Intersection over Union(IoU).md",
+    "Deep-Learning/Object-Detection/Non-Maximum Suppression(NMS).md",
+    "Deep-Learning/Object-Detection/Face/ArcFace.md",
+    "Deep-Learning/Object-Detection/Face/Haar Cascade.md",
+    "Deep-Learning/Object-Detection/Face/Face Recognition.md",
+    "Deep-Learning/Object-Detection/Face/Cascade.md",
+    "Large Language Model/Retrieval Augmented Generation(RAG).md",
+    "Deep-Learning/Object-Detection/Face",
+    "Math-Foundation/Probability-Statistics/Markov Reward.md",
     "Math-Foundation/Probability-Statistics/Pure Sampling.md",
     "Math-Foundation/Probability-Statistics/Bellman Equation.md",
-    "Math-Foundation/Probability-Statistics/Markov Reward.md",
     "Math-Foundation/Probability-Statistics/Markov Property.md",
     "Pasted image 20241129111755.png",
     "Reinforcement-Learning/Markov Reward Process(MRP).md",
@@ -190,17 +202,7 @@
     "Reinforcement-Learning/Value based RL.md",
     "Reinforcement-Learning/State.md",
     "Reinforcement-Learning/Reward.md",
-    "Reinforcement-Learning/Policy.md",
-    "Reinforcement-Learning/Actor-Critic.md",
-    "Reinforcement-Learning/Agent.md",
-    "Reinforcement-Learning/Action.md",
-    "Machine-Learning/Supervised Learning.md",
-    "references.md",
-    "Reinforcement-Learning/Environment.md",
     "Reinforcement-Learning",
-    "Math-Foundation/Linear-Algebra/Singular Value Decomposition(SVD).md",
-    "Math-Foundation/Linear-Algebra/Eigen Value Decomposition(EVD).md",
-    "Deep-Learning/Object-Detection/Region of Interest(RoI).md",
     "Untitled.canvas",
     "PyTorch",
     "Deep-Learning/Hidden Layer.jpeg",
@@ -210,7 +212,6 @@
     "Deep-Learning/Learning-Rate",
     "Deep-Learning",
     "Math-Foundation/Linear-Algebra/norm.py",
-    "Math-Foundation/Linear-Algebra/linear_algebra.py",
-    "Math-Foundation/Linear-Algebra/eigenvalue.py"
+    "Math-Foundation/Linear-Algebra/linear_algebra.py"
   ]
 }
