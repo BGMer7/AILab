@@ -1,2 +1,1 @@
-
-学习一个策略函数π(a|s)，无需构造价值函数，如REINFORCE算法
+[[Advantage Function]]
