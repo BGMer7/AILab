@@ -6,7 +6,9 @@
 [[Supervised Learning]]
 [[Markov Decision Process(MDP)]]
 [[Markov Reward Process(MRP)]]
-
+[[Actor-Critic]]
+[[Policy based RL]]
+[[Value based RL]]
 
 
 

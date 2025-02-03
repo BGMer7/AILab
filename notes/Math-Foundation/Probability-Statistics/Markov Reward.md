@@ -1,4 +1,4 @@
-[[Bellman Equation]]
+[[Math-Foundation/Probability-Statistics/Bellman Equation]]
 
 # 马尔可夫奖励函数
 
