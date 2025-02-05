@@ -1,4 +1,6 @@
 [[Value Function]]
+[[Q-Learning]]
+[[State-Action-Reward-State-Action(SARSA)]]
 
 学习最优动作价值函数Q，无需策略函数，如Q-learning，Sarsa，DQN方法
 
@@ -8,4 +10,6 @@
 
 在 **Value-based** 强化学习中，智能体通过学习一个与状态（或状态-动作对）相关的函数来评估各状态的“好坏”，而无需直接建模或优化策略。
 
-## 价值函数[[Value Function]]
+## 价值函数 [[Value Function]]
+
+## Q-Learning [[Q-Learning]]

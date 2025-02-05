@@ -27,9 +27,10 @@ RL没有标签告诉它在某种情况下应该做出什么样的行为，只有
 RL的结果反馈有延时，有时候可能需要走了很多步以后才知道之前某步的选择是好还是坏
 监督学习中输入是独立分布的，即各项数据之间没有关联
 RL面对的输入总是在变化，每当算法做出一个行为，它就影响了下一次决策的输入
-————————————————
 
-                            版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
-                        
-原文链接：https://blog.csdn.net/v_JULY_v/article/details/128965854
-
+## Refs
+[DQN 从入门到放弃1 DQN与增强学习 - 知乎](https://zhuanlan.zhihu.com/p/21262246?refer=intelligentunit)
+[DQN 从入门到放弃2 增强学习与MDP - 知乎](https://zhuanlan.zhihu.com/p/21292697?refer=intelligentunit)
+[DQN 从入门到放弃3 价值函数与Bellman方程 - 知乎](https://zhuanlan.zhihu.com/p/21340755)
+[DQN 从入门到放弃4 动态规划与Q-Learning - 知乎](https://zhuanlan.zhihu.com/p/21378532)
+[DQN从入门到放弃5 深度解读DQN算法 - 知乎](https://zhuanlan.zhihu.com/p/21421729)
