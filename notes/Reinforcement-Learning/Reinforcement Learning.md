@@ -1,14 +1,19 @@
-[[Action]]
-[[Agent]]
-[[Reward]]
-[[State]]
 [[Policy]]
 [[Supervised Learning]]
 [[Markov Decision Process(MDP)]]
-[[Markov Reward Process(MRP)]]
 [[Actor-Critic]]
 [[Policy based RL]]
 [[Value based RL]]
+
+# Action
+- action(简记为$a$)，玩超级玛丽的时候你会控制马里奥做三个动作，即向左走、向右走和向上跳，而马里奥做的这三个动作就是action
+# Agent
+- Agent，一般译为智能体，就是我们要训练的模型，类似玩超级玛丽的时候操纵马里奥做出相应的动作，而这个马里奥就是Agent
+# Reward
+- reward(简记为$r$)，这个奖赏可以类比为在明确目标的情况下，接近目标意味着做得好则奖，远离目标意味着做的不好则惩，最终达到收益/奖励最大化，且这个奖励是强化学习的核心
+# State
+- 环境的状态
+# Policy
 
 
 
