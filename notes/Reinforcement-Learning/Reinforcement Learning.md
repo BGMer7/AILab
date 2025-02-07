@@ -5,6 +5,39 @@
 [[Policy based RL]]
 [[Value based RL]]
 
+```
+强化学习（Reinforcement Learning）
+├── **基于模型（Model-Based）**
+│   ├── 动态规划（Dynamic Programming）
+│   │   ├── 策略迭代（Policy Iteration）
+│   │   └── 价值迭代（Value Iteration）
+│   └── 蒙特卡洛树搜索（MCTS）
+│
+├── **无模型（Model-Free）**
+│   ├── **基于价值（Value-Based）**
+│   │   ├── 时序差分（TD Learning）
+│   │   │   ├── Q-Learning（Off-Policy）  
+│   │   │   └── SARSA（On-Policy）
+│   │   └── 深度Q网络（DQN）及其变体（DDQN, C51）
+│   │
+│   ├── **基于策略（Policy-Based）**
+│   │   ├── 策略梯度（Policy Gradient）
+│   │   │   └── REINFORCE
+│   │   └── 近端策略优化（PPO）
+│   │
+│   └── **Actor-Critic**
+│       ├── A3C（Asynchronous Advantage Actor-Critic）
+│       └── DDPG（Deep Deterministic Policy Gradient）
+│
+├── **混合方法**
+│   ├── 蒙特卡洛（Monte Carlo, MC）方法
+│   └── TD(λ)（结合MC与TD）
+│
+└── **其他分支**
+    ├── 逆强化学习（Inverse RL）
+    └── 多智能体强化学习（MARL）
+```
+
 # Action
 - action(简记为$a$)，玩超级玛丽的时候你会控制马里奥做三个动作，即向左走、向右走和向上跳，而马里奥做的这三个动作就是action
 # Agent
@@ -27,7 +60,7 @@
 RL没有标签告诉它在某种情况下应该做出什么样的行为，只有一个做出一系列行为后最终反馈回来的reward，然后判断当前选择的行为是好是坏
 相当于RL的目标是最大化智能体策略在和动态环境交互过程中的价值，而策略的价值可以等价转换成奖励函数的期望，即最大化累计下来的奖励期望
 最优策略 = arg maxE { [奖励函数(状态,动作)] }
- 
+
 监督学习如果做了比较坏的选择则会立刻反馈给算法
 RL的结果反馈有延时，有时候可能需要走了很多步以后才知道之前某步的选择是好还是坏
 监督学习中输入是独立分布的，即各项数据之间没有关联
