@@ -148,6 +148,16 @@ with torch.no_grad():  # 关闭梯度计算
 print(f"Accuracy: {accuracy:.2f}")
 ```
 
+6. 保存或者加载模型
+
+```python
+# 保存模型
+torch.save(model.state_dict(), "model.pth")
+
+# 加载模型
+model.load_state_dict(torch.load("model.pth"))
+```
+
 
 
 
