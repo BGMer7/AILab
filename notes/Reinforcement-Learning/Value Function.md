@@ -41,7 +41,7 @@ $$
 
 
 
-## [[Bellman Equation]]
+## [[Math-Foundation/Probability-Statistics/Bellman Equation]]
 
 为了有效地计算和估计价值函数，强化学习中使用了 **Bellman 方程**，它提供了一种递归关系，通过当前状态的回报和未来状态的价值来计算当前状态的价值。
 

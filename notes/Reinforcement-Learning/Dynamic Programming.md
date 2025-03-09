@@ -15,7 +15,7 @@ $$
 G_t = \sum_{k=0}^{\infty} \gamma^k r_{t+k+1}
 $$
 
-### [[Bellman Equation]]
+### [[Math-Foundation/Probability-Statistics/Bellman Equation]]
 
 DP 的核心思想依赖于 **贝尔曼方程** 来递归定义值函数和优化策略。
 
