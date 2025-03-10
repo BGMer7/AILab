@@ -4,6 +4,7 @@
 [[Actor-Critic]]
 [[Policy based RL]]
 [[Value based RL]]
+[[On-Policy & Off-Policy]]
 
 ```
 强化学习（Reinforcement Learning）
