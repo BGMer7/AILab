@@ -1,3 +1,4 @@
+[[Value based RL]]
 Dynamic Programming（动态规划, DP）是强化学习中一种基于 **模型（Model-based）** 的求解方法，其前提是已知环境的 **状态转移概率** 和 **即时奖励函数**。DP 通常用于求解 **马尔可夫决策过程（Markov Decision Process, MDP）** 的最优策略与最优值函数。
 
 ## 基本概念

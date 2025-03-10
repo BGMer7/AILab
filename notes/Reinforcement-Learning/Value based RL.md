@@ -1,6 +1,6 @@
 [[Value Function]]
-[[Q-Learning]]
-[[State-Action-Reward-State-Action(SARSA)]]
+[[Monte Carlo Method (MC)]]
+[[Temporal-Difference]]
 
 学习最优动作价值函数Q，无需策略函数，如Q-learning，Sarsa，DQN方法
 

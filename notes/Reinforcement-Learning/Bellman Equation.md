@@ -1,3 +1,5 @@
+[[Reinforcement Learning]]
+
 > https://zh.wikipedia.org/zh-cn/%E8%B2%9D%E7%88%BE%E6%9B%BC%E6%96%B9%E7%A8%8B
 > “**贝尔曼方程（Bellman Equation）**”也被称作“**动态规划方程（Dynamic Programming Equation）**”，由[理查·贝尔曼](https://zh.wikipedia.org/wiki/%E7%90%86%E6%9F%A5%E5%BE%B7%C2%B7%E8%B2%9D%E7%88%BE%E6%9B%BC "理查德·贝尔曼")（Richard Bellman）发现。贝尔曼方程是[动态规划](https://zh.wikipedia.org/wiki/%E5%8B%95%E6%85%8B%E8%A6%8F%E5%8A%83 "动态规划")（Dynamic Programming）这种数学最佳化方法能够达到[最佳化](https://zh.wikipedia.org/wiki/%E6%9C%80%E4%BD%B3%E5%8C%96 "最佳化")的[必要条件](https://zh.wikipedia.org/wiki/%E5%BF%85%E8%A6%81%E6%A2%9D%E4%BB%B6 "必要条件")。此方程将“决策问题在特定时间点的值”以“来自初始选择的报酬 及 由初始选择衍生的决策问题的值”的形式表示。藉这个方式将动态最佳化问题变成较简单的子问题，而这些子问题遵守由贝尔曼所提出的“最佳化原理”。
 > 

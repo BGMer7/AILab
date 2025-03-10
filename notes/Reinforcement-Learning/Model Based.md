@@ -1,3 +1,4 @@
+[[Reinforcement Learning]]
 ### **Model-based理论简介**
 
 Model-based方法的核心思想是通过构建环境模型来模拟环境的行为，从而实现决策和学习。这种方法包括两个主要步骤：
