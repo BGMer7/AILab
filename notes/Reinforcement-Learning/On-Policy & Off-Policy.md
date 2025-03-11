@@ -63,11 +63,11 @@
 
 ### Off-Policy方法
 
-**定义**：在off-policy方法中，智能体的行为策略 μ 和目标策略 π\pi 是不同的，即 $\pi \neq \mu$。换句话说，智能体可以使用一种探索性更强的行为策略来收集数据，但仍然学习最优的目标策略。
+**定义**：在off-policy方法中，智能体的行为策略 μ 和目标策略 π 是不同的，即 $\pi \neq \mu$。换句话说，智能体可以使用一种探索性更强的行为策略来收集数据，但仍然学习最优的目标策略。
 
 **代表算法**：
 
-- Q-Learning： $Q(s,a) \leftarrow Q(s,a) + \alpha \left( r + \gamma \max_{a'} Q(s', a') - Q(s,a) \right)$ 其中 a′a' 不是按照当前策略选择的，而是直接取最大Q值对应的动作（贪心策略）。
+- Q-Learning： $Q(s,a) \leftarrow Q(s,a) + \alpha \left( r + \gamma \max_{a'} Q(s', a') - Q(s,a) \right)$ 其中 a′ 不是按照当前策略选择的，而是直接取最大Q值对应的动作（贪心策略）。
 - Deep Q-Network（DQN）：使用经验回放（Experience Replay）来训练深度神经网络，即用过去不同策略的数据来训练当前策略，使得目标策略与行为策略不同。
 
 **优点**：
