@@ -1,3 +1,4 @@
+[[Policy based RL]]
 优势函数（Advantage Function）是强化学习中一个极其重要的概念，它在评估和改进策略时起到了关键作用。
 
 ## 概念定义
@@ -17,27 +18,46 @@ $$
 
 ## 优势函数的作用
 
-### 降低策略梯度估计的方差
+优势函数（Advantage Function, A(s,a)A(s, a)）在强化学习（Reinforcement Learning, RL）中主要有以下作用：
 
+### 衡量动作的相对优劣
 
+优势函数定义为：
+$$
+A(s, a) = Q(s, a) - V(s)
+$$
+其中，Q(s,a)Q(s, a) 是状态-动作值函数，V(s)V(s) 是状态值函数。它表示在状态 ss 下执行动作 aa 相对于平均策略表现的增益。如果 A(s,a)>0A(s, a) > 0，说明该动作比平均水平更优；反之，A(s,a)<0A(s, a) < 0 则表示该动作较差。
 
-### 帮助策略改进
+### 降低值函数方差，提高稳定性
 
+在策略梯度方法（Policy Gradient Methods）中，直接使用 $Q(s, a)$ 作为优化目标可能导致较高方差，而使用优势函数 $A(s, a)$ 可以减少方差，使训练更稳定。例如，在 **优势演员-评论家（Advantage Actor-Critic, A2C/A3C）** 中，优势函数用于指导策略更新，减少不必要的更新噪声。
 
+### 引导策略梯度优化
 
-## 优势函数的估计方法
+在策略优化中，使用优势函数可以更有效地更新策略：
+$$
+J(\theta) = \mathbb{E}_{\pi} \left[ \nabla \log \pi_{\theta}(a | s) A(s, a) \right]
+$$
+这里，$A(s, a)$ 作为加权因子，强调那些比平均水平好的动作，同时减少对无效动作的学习，提高学习效率。
 
+### 应用于基线调整（Baseline Correction）  
 
+在策略梯度方法中，可以使用 V(s)V(s) 作为基线来减少方差，因为基线不影响期望梯度方向：
+$$
+\nabla J(\theta) = \mathbb{E}_{\pi} \left[ \nabla \log \pi_{\theta}(a | s) (Q(s, a) - b) \right]
+$$
+其中，选择 b=V(s)b = V(s) 就得到了优势函数 A(s,a)A(s, a)，这减少了梯度估计的方差，提高了优化效率。
 
-### 使用 TD 误差作为近似
+### 在优势强化学习（Advantage Learning, AL）中用于加速学习
 
+一些强化学习算法（如 **Advantage Weighted Regression (AWR)** 和 **Trust Region Policy Optimization (TRPO)**）利用优势函数来调整策略，使得高优势值的动作更可能被选择，从而提升策略的性能。
 
+在实际应用中，优势函数常用的估计方法包括：
 
-### 泛化优势估计（Generalized Advantage Estimation, GAE）
+- **TD 误差估计**： $A(s, a) \approx r + \gamma V(s') - V(s)$
+- **GAE（广义优势估计，Generalized Advantage Estimation）**：用于平衡偏差和方差，提高估计稳定性
 
-
-
-### 直接优势估计（Direct Advantage Estimation）
+总的来说，优势函数是强化学习中重要的概念，可以帮助提高策略优化的稳定性和效率，广泛应用于现代策略梯度方法和基于值的强化学习算法。
 
 
 
@@ -50,5 +70,4 @@ $$
 - **指导策略改进：** 正的优势鼓励增加动作概率，负的优势则抑制该动作，有助于智能体更快地发现最优策略。
 
 常见的优势函数估计方法包括使用单步 TD 误差、泛化优势估计（GAE）以及更为前沿的直接优势估计方法。通过合理估计优势函数，现代强化学习算法（如 PPO、A2C/A3C 等）能够在复杂环境中更高效、更稳定地学习最优策略。
-
 
