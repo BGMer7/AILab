@@ -1,4 +1,5 @@
 [[Temporal-Difference]]
+[[Value based RL]]
 [强化学习(七)--Q-Learning和Sarsa - 知乎](https://zhuanlan.zhihu.com/p/46850008)
 [DQN 从入门到放弃4 动态规划与Q-Learning - 知乎](https://zhuanlan.zhihu.com/p/21378532)(非常好的ref，作者来自kimi，文章日期2016年)
 
