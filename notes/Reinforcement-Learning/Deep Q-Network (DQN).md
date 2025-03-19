@@ -143,7 +143,7 @@ $$
    重复上述步骤，直到满足停止条件（如达到最大步数或达到预定的性能标准）。
 
 ## 代码实现示例
-以下是一个使用PyTorch实现的简单的DQN算法的例子，假设环境是OpenAI Gym的CartPole环境：
+以下是一个使用PyTorch实现的简单的DQN算法的例子，假设环境是OpenAI Gym的CartPole-1环境：
 
 ```python
 import torch
@@ -168,23 +168,23 @@ class QNetwork(nn.Module):
 
     def forward(self, state):
         return self.fc(state)
-
 # 创建环境
-env = gym.make('CartPole-v0')
+env = gym.make('CartPole-v1')
 state_dim = env.observation_space.shape[0]
 action_dim = env.action_space.n
-
+print(state_dim, action_dim)
 # 创建网络
 online_net = QNetwork(state_dim, action_dim)
 target_net = QNetwork(state_dim, action_dim)
 target_net.load_state_dict(online_net.state_dict())
-
 # 创建优化器
 optimizer = optim.Adam(online_net.parameters())
-
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(device)
+online_net.to(device)
+target_net.to(device)
 # 创建经验回放缓冲区
 replay_buffer = deque(maxlen=10000)
-
 # 设置超参数
 epsilon = 1.0  # 探索率
 epsilon_decay = 0.995  # 探索率衰减
@@ -193,12 +193,12 @@ gamma = 0.99  # 折扣因子
 batch_size = 64  # 批大小
 update_target_every = 100  # 更新目标网络的频率
 max_steps = 10000  # 最大步数
-
 # 训练过程
 for step in range(max_steps):
     # 选择动作
-    state = env.reset()
-    state = torch.tensor(state, dtype=torch.float32).unsqueeze(0)
+    state, _ = env.reset()
+    state = torch.tensor(state, dtype=torch.float32).unsqueeze(0).to(device)
+    # epsilon-greedy策略
     if np.random.rand() < epsilon:
         action = env.action_space.sample()  # 探索
     else:
@@ -206,9 +206,10 @@ for step in range(max_steps):
             action = torch.argmax(online_net(state)).item()  # 利用
 
     # 执行动作并存储转移
-    next_state, reward, done, _ = env.step(action)
-    next_state = torch.tensor(next_state, dtype=torch.float32).unsqueeze(0)
-    reward = torch.tensor([reward], dtype=torch.float32)
+    next_state, reward, terminated, truncated, info = env.step(action)
+    done = terminated or truncated  # 合并终止和截断条件
+    next_state = torch.tensor(next_state, dtype=torch.float32).unsqueeze(0).to(device)
+    reward = torch.tensor([reward], dtype=torch.float32).to(device)
     replay_buffer.append((state, action, reward, next_state, done))
     state = next_state
 
@@ -216,11 +217,11 @@ for step in range(max_steps):
     if len(replay_buffer) >= batch_size:
         minibatch = random.sample(replay_buffer, batch_size)
         states, actions, rewards, next_states, dones = zip(*minibatch)
-        states = torch.cat(states)
-        actions = torch.tensor(actions, dtype=torch.long).unsqueeze(1)
-        rewards = torch.cat(rewards)
-        next_states = torch.cat(next_states)
-        dones = torch.tensor(dones, dtype=torch.float32)
+        states = torch.cat(states).to(device)
+        actions = torch.tensor(actions, dtype=torch.long).unsqueeze(1).to(device)
+        rewards = torch.cat(rewards).to(device)
+        next_states = torch.cat(next_states).to(device)
+        dones = torch.tensor(dones, dtype=torch.float32).to(device)
 
         q_values = online_net(states).gather(1, actions)
         with torch.no_grad():
