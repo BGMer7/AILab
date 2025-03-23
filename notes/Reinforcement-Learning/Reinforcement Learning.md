@@ -5,6 +5,7 @@
 [[Policy based RL]]
 [[Value based RL]]
 [[On-Policy & Off-Policy]]
+[[Observation Space]]
 
 ```
 强化学习（Reinforcement Learning）
