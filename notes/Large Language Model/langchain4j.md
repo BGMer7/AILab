@@ -185,7 +185,7 @@ This model can score (or rank) multiple pieces of text against a query, essentia
 
 
 ## Model Parameters
-
+[[OpenAI Platform]]
 
 
 ## Response Streaming
@@ -193,6 +193,48 @@ This model can score (or rank) multiple pieces of text against a query, essentia
 
 
 ## AI Services
+
+
+
+## Agents
+
+
+
+## Tools (Function Calling)
+
+### High-level & Low-level
+
+> 在 LangChain4j 这个 Java 库中，“High Level”（高级）和 “Low Level”（低级）指的是不同抽象层次的 API 或组件，它们提供了与大型语言模型（LLM）交互的不同方式：
+>
+> 1. **High Level API / Components (高级 API / 组件):**
+>    - **目标:** 简化常见用例的开发，提供更易于使用的抽象，隐藏底层复杂性。开发者可以用更少的代码快速构建功能。
+>    - 特点:
+>      - **高度抽象:** 封装了许多细节，例如提示工程、模型调用、输出解析、状态管理等。
+>      - **易用性:** 通常只需要进行简单的配置和调用即可实现复杂的功能。
+>      - **面向常见模式:** 主要针对诸如问答、摘要、聊天机器人、工具使用（Agents）等标准场景。
+>    - 例子:
+>      - **`AiServices`:** 这是 LangChain4j 中一个非常高级的抽象。你只需要定义一个 Java 接口，`AiServices` 就能自动为你实现该接口，通过调用 LLM 来完成接口方法的逻辑。这极大地简化了将 LLM 功能集成到现有代码的方式。
+>      - **预定义的 Chains:** 例如 `ConversationalChain`，它封装了处理带有记忆的对话的逻辑。
+>      - **Agents:** 它们封装了让 LLM 决定使用哪些工具（Tools）以及如何按顺序执行以完成任务的逻辑。
+> 2. **Low Level API / Components (低级 API / 组件):**
+>    - **目标:** 提供更精细的控制和更大的灵活性，允许开发者直接与核心构建块交互。
+>    - 特点:
+>      - **更接近底层:** 提供对模型调用、提示构建、内存管理、数据嵌入等基础操作的直接访问。
+>      - **灵活性:** 允许开发者根据特定需求定制复杂的、非标准的流程和逻辑。
+>      - **需要更多代码和理解:** 开发者需要自己处理更多的细节，例如构建提示、解析模型输出、管理对话历史等。
+>    - 例子:
+>      - **直接使用 `ChatLanguageModel` 或 `LanguageModel` 接口:** 手动创建 `Prompt` 或 `ChatMessage`，直接调用模型的 `generate` 方法，并自行处理返回的 `Response`。
+>      - **手动管理 `ChatMemory`:** 自己控制对话历史的存储和检索方式。
+>      - **直接使用 `EmbeddingModel` 和 `EmbeddingStore`:** 手动进行文本嵌入并将向量存入/检索出向量数据库。
+>      - **自定义 `PromptTemplate`:** 精细地控制如何根据输入变量构建最终发送给模型的提示。
+>      - **组合基础模块:** 通过手动组合模型、提示模板、输出解析器等基础组件来构建自定义链（Chains）。
+>
+> **总结:**
+>
+> - **High Level:** 追求**简单**和**快速开发**，适合标准场景，代码量少，但灵活性相对较低。以 `AiServices` 为代表。
+> - **Low Level:** 追求**灵活**和**控制**，适合定制化、复杂场景，需要更多代码和对库内部机制的理解。以直接调用 `ChatLanguageModel`、`EmbeddingModel` 等为代表。
+>
+> 开发者可以根据自己的需求选择合适的抽象层级。对于简单的任务或快速原型设计，高级 API 非常有用。对于需要精细控制或实现非标准工作流程的应用，则需要使用低级 API。通常，一个复杂的应用可能会混合使用这两个层级的组件。
 
 
 
