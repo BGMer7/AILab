@@ -1,5 +1,5 @@
 [[Auto Regressive(AR)]]
-[[Transformer]]
+[[Deep-Learning/Transformer]]
 [[Non-Autoregressive Transformer(NAT)]]
 
 ### **自回归 Transformer (AT)**

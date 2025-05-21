@@ -1,5 +1,5 @@
 [[Auto Regressive(AR)]]
-[[Transformer]]
+[[Deep-Learning/Transformer]]
 [[Autoregressive Transformer(AT)]]
 
 非自回归转换器（Non-Autoregressive Transformer, NAT）解码器是一种特殊类型的解码器，设计用来在序列生成任务中加速输出的生成过程。

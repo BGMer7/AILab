@@ -1,4 +1,4 @@
-[[Transformer]]
+[[Deep-Learning/Transformer]]
 [[convolution]]
 在深度学习中，**Backbone** 是模型的核心网络部分，通常负责特征提取。它是模型中用于从输入数据中提取有用特征的基础结构，广泛应用于图像处理、目标检测、语义分割、自然语言处理等任务中。
 

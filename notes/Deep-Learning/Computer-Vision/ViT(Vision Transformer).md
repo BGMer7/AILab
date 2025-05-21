@@ -1,4 +1,4 @@
-[[Transformer]]
+[[Deep-Learning/Transformer]]
 
 https://arxiv.org/abs/2010.11929
 https://github.com/google-research/vision_transformer
