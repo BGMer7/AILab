@@ -170,7 +170,7 @@ async def main():
     # Ensure environment variables are loaded if you use them for API keys, etc.
     # Example: api_key = os.getenv("DEEPSEEK_API_KEY")
     # For this example, using hardcoded values as in the original.
-    deepseek_api_key = 'sk-df16bc85167a40c6b689089e5786f93e' # Replace with your actual key or load from env
+    deepseek_api_key = '' # Replace with your actual key or load from env
     deepseek_url = 'https://api.deepseek.com' #
 
     async with Client("http://127.0.0.1:8001/sse") as mcp_client: #
