@@ -1,6 +1,13 @@
+import time
 from pymilvus import MilvusClient, DataType
 
+
 client = MilvusClient(uri="http://localhost:19530")
+
+client.drop_collection(collection_name="customized_setup_1")
+client.drop_collection(collection_name="customized_setup_2")
+client.drop_collection(collection_name="customized_setup_3")
+
 
 # 3.1. Create schema
 schema = MilvusClient.create_schema(
@@ -46,23 +53,25 @@ print(res)
 res = client.describe_collection(collection_name="customized_setup_2")
 print(res)
 
-client.load_collection(collection_name="customized_setup_2")
 res = client.get_load_state(collection_name="customized_setup_2")
 print(res)
 
 # With TTL
 client.create_collection(
-    collection_name="customized_setup_1",
+    collection_name="customized_setup_3",
     schema=schema,
-    properties={
-        "collection.ttl.seconds": 1209600
-    }
+    properties={"collection.ttl.seconds": 5},
 )
 
-client.create_collection(
-    collection_name="customized_setup_2",
-    schema=schema,
-    properties={
-        "collection.ttl.seconds": 1209600
-    }
-)
+client.drop_collection(collection_name="customized_setup_1")
+
+client.drop_collection(collection_name="customized_setup_2")
+
+res = client.list_collections()
+print(res)
+
+time.sleep(6)
+
+client.drop_collection(collection_name="customized_setup_3")
+res = client.list_collections()
+print(res)
