@@ -1,0 +1,252 @@
+[
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "能帮我加个工商银行到自选吗",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "账户目前浮盈多少？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我的自选股里有宁德时代吗？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "能帮我把招商银行加入自选吗？",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我的自选股里有平安银行吗？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "今天大盘怎么样？",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我持有的基金赚了没",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我的自选股里有宁德时代吗？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我的自选股里的比亚迪表现如何？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "账户里的浮盈现在是多少？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我的账户浮盈是多少",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "最近国家出台了哪些经济刺激政策？",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "你能帮我添加招商银行到自选列表中吗？",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "最近大盘走势如何？",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我持有的股票赚了没",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "可以帮我添加这只股票到自选里吗",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "账户浮盈情况怎么样了？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "账户现在的浮盈情况怎么样？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我的自选股里有腾讯吗",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "今天大盘表现如何",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "最近的宏观经济政策有什么变化",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "自选股里的平安银行最近表现怎么样",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "请帮我添加中国平安到自选股列表中。",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "今年的经济政策怎么样？",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "请告诉我阿里巴巴的最新股价。",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "账户里比亚迪的浮盈是多少？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "请帮我添加招商银行到我的自选股。",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "账户里目前浮盈多少了？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "请帮我添加中国平安到自选",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我最近的账户浮盈是多少？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "删除自选中的腾讯控股",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "能帮我查一下工商银行的历史股价吗？",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "最近政府出台了哪些关于新能源汽车的政策？",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我的账户浮盈是多少",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "今天大盘走势如何",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "今天大盘走势如何？",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我的自选股里有茅台吗？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "今年的经济政策有什么变化",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我的自选股里有哪几家公司的股票表现最好？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我想知道我账户里的浮盈情况。",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我最近添加到自选的那只科技股涨了吗？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "国家最新出台了哪些经济刺激政策？",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "最近国家对房地产有什么新政策吗？",
+    "output": "{\"need_watchlist_context\": false}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "账户今天浮盈多少",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我最近的账户浮盈是多少？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我的自选股里有哪几家公司的股票表现不错？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我在自选股中的腾讯控股表现怎么样？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我赚了多少钱",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我自选股里的比亚迪表现怎么样？",
+    "output": "{\"need_watchlist_context\": true}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "账户今天浮盈多少？",
+    "output": "{\"need_watchlist_context\": true}"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "帮我总结一下我的持仓今天表现",
+    "output": "{\"need_watchlist_context\": true, \"reason\": \"询问了用户具体的持仓表现\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我关注的那个白酒股今天跌了吗",
+    "output": "{\"need_watchlist_context\": true, \"reason\": \"提到了用户关注的特定股票\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "今天的上证指数是多少",
+    "output": "{\"need_watchlist_context\": false, \"reason\": \"纯公共市场查询，不涉及个人数据\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "你好，能告诉我明天天气怎么样吗？",
+    "output": "{\"need_watchlist_context\": false, \"reason\": \"与股票无关的闲聊内容\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "把茅台加到我的自选股里",
+    "output": "{\"need_watchlist_context\": false, \"reason\": \"这是个操作指令，并非基于已有数据的回答\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我持有的那个新能源汽车股今天涨了多少",
+    "output": "{\"need_watchlist_context\": true, \"reason\": \"直接询问了用户持有股票的表现\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "最近科技板块走势如何",
+    "output": "{\"need_watchlist_context\": false, \"reason\": \"关于行业而非个人投资组合的查询\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我想知道阿里巴巴的股价现在是多少",
+    "output": "{\"need_watchlist_context\": false, \"reason\": \"针对具体但非个人关联的股票提问\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "我亏了多少？",
+    "output": "{\"need_watchlist_context\": true, \"reason\": \"涉及到用户账户的实际盈亏情况\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "可以教我怎么写一个简单的Python程序吗？",
+    "output": "{\"need_watchlist_context\": false, \"reason\": \"完全无关的主题，属于编程指导请求\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "你认为未来几天股市会怎样发展？",
+    "output": "{\"need_watchlist_context\": false, \"reason\": \"对市场整体趋势的预测性问题\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "请分析下我的自选股里的xx公司前景",
+    "output": "{\"need_watchlist_context\": true, \"reason\": \"明确指出了用户自选股中的某个公司\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "删除我的自选股列表中的中国平安",
+    "output": "{\"need_watchlist_context\": false, \"reason\": \"这是一个修改命令，不需要先拉取数据\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "你能给我推荐一些好的股票吗？",
+    "output": "{\"need_watchlist_context\": false, \"reason\": \"寻求投资建议而非检查现有持股\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "赚了没？",
+    "output": "{\"need_watchlist_context\": true, \"reason\": \"关心当前账户盈亏状态\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "请问纳斯达克综合指数现在的点位是多少？",
+    "output": "{\"need_watchlist_context\": false, \"reason\": \"关于国际市场的常规信息查询\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "给我看看我的账户表现",
+    "output": "{\"need_watchlist_context\": true, \"reason\": \"要求查看个人账户的整体表现\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "比特币的价格现在是多少？",
+    "output": "{\"need_watchlist_context\": false, \"reason\": \"涉及加密货币而非股票的数据查询\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "从我的自选股中移除京东",
+    "output": "{\"need_watchlist_context\": false, \"reason\": \"更改自选股的操作请求\"}"
+  },
+  {
+    "instruction": "判断是否需要检索用户的自选股数据来辅助回答。",
+    "input": "今天哪个板块表现最好？",
+    "output": "{\"need_watchlist_context\": false, \"reason\": \"关于整个市场的板块表现而非个人投资\"}"
+  }
+]
